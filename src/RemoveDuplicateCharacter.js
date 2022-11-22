@@ -18,7 +18,7 @@ let unique = [...new Set(names)];
 console.log(unique);
 
 const numbers = [1 , 21, 21, 34 ,12 ,34 ,12];
-const removeRepeatNumbers = array => [... new Set(array)]
+const removeRepeatNumbers = array => [...new Set(array)]
 removeRepeatNumbers(numbers) // [ 1, 21, 34, 12 ]
   return (
     <div>
