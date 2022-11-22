@@ -9,6 +9,8 @@ const Style = ()=> {
 
     }
 
+    
+
     return (
         <div className='container card'>
             <h1 className={style.txt}>HELLO WORLD</h1>

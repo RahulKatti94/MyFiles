@@ -1,10 +1,13 @@
-import RemoveDuplicateCharacter from './RemoveDuplicateCharacter';
-import Style from './Style';
+// import Cmd from './Cmd';
+// import RemoveDuplicateCharacter from './RemoveDuplicateCharacter';
+// import Style from './Style';
+
 function App() {
   return (
     <div className="App">
-      <RemoveDuplicateCharacter />
-      <Style />
+      {/* <RemoveDuplicateCharacter /> */}
+      {/* <Style /> */}
+    {/* <Cmd /> */}
     </div>
   );
 }
