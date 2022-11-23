@@ -1,0 +1,58 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.second-div{
+    height: 950px;
+    width: 500px;
+    margin-left: 700px !important;
+    background-color: bisque;
+}
+
+.main-div{
+    background-color: aqua;
+}
+
+.third-div{
+    position: absolute;
+    top: 70px;
+    left: 860px;
+}
+
+.btn-tag{
+    border-radius: none;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    right: -50px;
+  background-color: aquamarine;
+}
+
+.btn-tag:hover{
+background-color: red;
+
+}
+
+.order-class{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+
+.btn-class-element{
+    height: 25px;
+    width: 30px;
+    color: black;
+    position: absolute;
+    right: 120px;
+    background-color: coral;
+}
+
+.btn-class-element:hover{
+    background-color: chartreuse;
+}
+
+.ello{
+    list-style: none;
+}
