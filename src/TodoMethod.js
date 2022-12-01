@@ -10,7 +10,8 @@ const TodoMethod = () =>{
         setValue(e.target.value)
     }
 
-     const storeData = () =>{
+     const storeData = (e) =>{
+        e.preventDefault();
         setData((ele) =>{ 
                 return [...ele , value]
                

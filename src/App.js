@@ -5,11 +5,13 @@
 // import TodoMethod from "./TodoMethod";
 
 // import { useState } from "react";
-import SingDown from './SingDown'
+// import Emoji from './Emoji';
+// import SingDown from './SingDown'
 // import UploadAndDisplayImage from './UploadAndDisplayImage'
 // import LoginId from './LoginId'
 // import Information from "./Information";
-
+// import LocalStorage from "./LocalStorage";
+import LocalFormStorage from "./LocalFormStorage";
 
 
 function App() {
@@ -25,9 +27,15 @@ function App() {
     {/* <Information setData = {setData}  info = {name}/> */}
 
     {/*   <TodoMethod /> */}
-    <SingDown />
+    {/* <SingDown /> */}
     {/* <UploadAndDisplayImage /> */}
     {/* <LoginId /> */}
+
+    {/* <LocalStorage /> */}
+
+    {/* <Emoji /> */}
+    <LocalFormStorage />
+   
     </div>
   );
 }
