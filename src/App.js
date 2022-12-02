@@ -26,7 +26,7 @@ function App() {
     {/* <h1> parent Component :  {data}</h1> */}
     {/* <Information setData = {setData}  info = {name}/> */}
 
-    {/*   <TodoMethod /> */}
+      {/* <TodoMethod /> */}
     {/* <SingDown /> */}
     {/* <UploadAndDisplayImage /> */}
     {/* <LoginId /> */}

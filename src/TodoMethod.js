@@ -10,15 +10,15 @@ const TodoMethod = () =>{
         setValue(e.target.value)
     }
 
-     const storeData = (e) =>{
-        e.preventDefault();
+     const storeData = () =>{
+      
         setData((ele) =>{ 
                 return [...ele , value]
                
         })
         setValue(" ");
      }
-    
+    console.log(data)
      const removeItem = (id) =>{
 
         setData((ele)=>{
