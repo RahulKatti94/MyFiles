@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const LocalFormStorage = () => {
   const [data, setData] = useState(getFormValue);
+
+  const [value , setValue] = useState ({});
 
 
 
@@ -17,22 +19,23 @@ const LocalFormStorage = () => {
     return JSON.parse(storedValue)
   }
 
-  useEffect (()=>{
-      localStorage.setItem('key' , JSON.stringify(data));
-  } , [data]);
+
+//   const handleChange = (event) => {
+//     setData((previousValue)=>({
+//       ...previousValue,
+//       [event.target.name] : event.target.value,
+//     }));
+// }
 
   const onSubmitHandler = (e) =>{
     e.preventDefault(); 
-    alert("message")
+    // localStorage.setItem('key' , JSON.stringify(data)); 
+    setValue({...data})
+
  }
+ console.log(value);
 
-
-  const handleChange = (event) => {
-      setData((previousValue)=>({
-        ...previousValue,
-        [event.target.name] : event.target.value,
-      }));
-  }
+  
 
 
 
@@ -49,9 +52,8 @@ const LocalFormStorage = () => {
           type="text"
           placeholder="please enter your name"
           value={data.fname}
-           onChange={handleChange}
-           name = "name"
-          required
+          //  name = "name"    
+          // required
         ></input>
         <br />
         <label   htmlFor="email">email_Id</label>
@@ -60,29 +62,29 @@ const LocalFormStorage = () => {
           type="email"
           placeholder="please enter your email"
           value={data.email}
-          required
-          name="email"
-          onChange={handleChange}
+          // required
+          // name="email"
+         
         ></input>
         <br />
         <label  htmlFor="telephone">telephone</label>
         <br />
         <input
          type="telephone"
-          required
+          // required
            value={data.telephone}
-          onChange={handleChange}
-          name="telephone"
+          
+          // name="telephone"
           ></input>
         <br />
         <label htmlFor="Messsage" >Messsage</label>
         <textarea
           className="mb-4"
           rows={4}
-          required
+          // required
           value={data.message}
-          onChange={handleChange}
-          name="message"
+          
+          //  name="message"
         ></textarea>
         <br />
         <div>
