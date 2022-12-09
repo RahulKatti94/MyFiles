@@ -1,9 +1,7 @@
-// import Cmd from './Cmd';
+// import StoredDataOnWindow from "./StoredDataOnWindow";
 // import RemoveDuplicateCharacter from './RemoveDuplicateCharacter';
 // import Style from './Style';
-
 // import TodoMethod from "./TodoMethod";
-
 // import { useState } from "react";
 // import Emoji from './Emoji';
 // import SingDown from './SingDown'
@@ -11,8 +9,11 @@
 // import LoginId from './LoginId'
 // import Information from "./Information";
 // import LocalStorage from "./LocalStorage";
-import LocalFormStorage from "./LocalFormStorage";
-
+// import LocalFormStorage from "./LocalFormStorage";
+// import LocalStorageData from "./LocalStorageData";
+// import TestComponent from "./TestComponent.js";
+import CallBackHook from "./CallBackHook.js";
+// import FormValidation from "./FormValidation.js"
 
 function App() {
   // const name = 'Snehal' ;
@@ -22,20 +23,23 @@ function App() {
     <div className="App">
       {/* <RemoveDuplicateCharacter /> */}
       {/* <Style /> */}
-    {/* <Cmd /> */}
-    {/* <h1> parent Component :  {data}</h1> */}
-    {/* <Information setData = {setData}  info = {name}/> */}
-
+      {/* <StoredDataOnWindow /> */}
+      {/* <h1> parent Component :  {data}</h1> */}
+      {/* <Information setData = {setData}  info = {name}/> */}
       {/* <TodoMethod /> */}
-    {/* <SingDown /> */}
-    {/* <UploadAndDisplayImage /> */}
-    {/* <LoginId /> */}
+      {/* <SingDown /> */}
+      {/* <UploadAndDisplayImage /> */}
+      {/* <LoginId /> */}
+      {/* <LocalStorage /> */}
+       {/* <Emoji /> */}
+      {/* <TestComponent /> */}
+      {/* <LocalStorageData /> */}
+      {/* <LocalFormStorage /> */}
 
-    {/* <LocalStorage /> */}
+      {/* 8 dec 2022 */}
+      {/* <FormValidation /> */}
 
-    {/* <Emoji /> */}
-    <LocalFormStorage />
-   
+      <CallBackHook />
     </div>
   );
 }

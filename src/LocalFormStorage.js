@@ -1,90 +1,89 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+
 
 const LocalFormStorage = () => {
-  const [data, setData] = useState(getFormValue);
-
-  const [value , setValue] = useState ({});
+  const [data, setData] = useState(getFormValues);
 
 
-
-  function getFormValue () {
-    const storedValue = localStorage.getItem('key');
-    if (!storedValue) return{
-      fname: " ",
-      email: " ",
-      telephone: " ",
-      message: " ",
-
-    };
-    return JSON.parse(storedValue)
+  function getFormValues() {
+    const storedValues = localStorage.getItem('form');
+    if (!storedValues)
+      return {
+        name: '',
+        email: '',
+        telephone: '',
+        message: '',
+        };
+    return JSON.parse(storedValues);
   }
 
+  useEffect(() => {
+		localStorage.setItem('form', JSON.stringify(data));
+	}, [data]);
+ 
+     const handleChange = (event) => {
+       setData((previousValue)=>({
+         ...previousValue,
+         [event.target.name] : event.target.value,
+       }));
+   }
 
-//   const handleChange = (event) => {
-//     setData((previousValue)=>({
-//       ...previousValue,
-//       [event.target.name] : event.target.value,
-//     }));
-// }
-
-  const onSubmitHandler = (e) =>{
-    e.preventDefault(); 
-    // localStorage.setItem('key' , JSON.stringify(data)); 
-    setValue({...data})
-
- }
- console.log(value);
-
-  
-
-
-
-
-   
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    alert('An error occurred on the server. Please try again!!!');
+  };
 
   return (
     <div className="pt-5">
-      <form onSubmit={onSubmitHandler} className=" mt-5 w-25 card container text-center">
+      <form
+        onSubmit={onSubmitHandler}
+        className=" mt-5 w-25 card container text-center"
+      >
         <h1> Registration Form</h1>
-        <label htmlFor="name">fist Name</label>
+        <label htmlFor="fname">fist Name</label>
         <br />
         <input
           type="text"
           placeholder="please enter your name"
           value={data.fname}
-          //  name = "name"    
-          // required
+          name="name"
+          required
+          onChange={handleChange}
+         
         ></input>
         <br />
-        <label   htmlFor="email">email_Id</label>
+        <label htmlFor="e_mail">email_Id</label>
         <br />
         <input
           type="email"
           placeholder="please enter your email"
           value={data.email}
-          // required
-          // name="email"
-         
+          required
+          name="email"
+          id="e_mail"
+          onChange={handleChange}
         ></input>
         <br />
-        <label  htmlFor="telephone">telephone</label>
+        <label htmlFor="cellphone">telephone</label>
         <br />
         <input
-         type="telephone"
-          // required
-           value={data.telephone}
-          
-          // name="telephone"
-          ></input>
+          type="telephone"
+          required
+          value={data.telephone}
+          id="cellphone"
+          name="telephone"
+          onChange={handleChange}
+        ></input>
         <br />
-        <label htmlFor="Messsage" >Messsage</label>
+        <label htmlFor="messsager">Messsage</label>
         <textarea
           className="mb-4"
           rows={4}
-          // required
+          required
           value={data.message}
-          
-          //  name="message"
+          name="messsage"
+          onChange={handleChange}
         ></textarea>
         <br />
         <div>

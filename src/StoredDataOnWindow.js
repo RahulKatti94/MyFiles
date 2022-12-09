@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 
-const Cmd = () => {
+const StoredDataOnWindow = () => {
   const [inputValue, setInputValue] = useState("");
   const [list, setList] = useState([]);
   const inputRef = useRef();
@@ -93,4 +93,4 @@ const Cmd = () => {
   );
 };
 
-export default Cmd
+export default StoredDataOnWindow
