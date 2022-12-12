@@ -10,7 +10,7 @@ const CallBackHook = () => {
   const todo = useCallback(() => {
     setLIst((pre) => [...pre, `entry no.  `]);
   },
-  [list]);    
+  []);    
  
 
   const btnHandler = () => {

@@ -12,8 +12,13 @@
 // import LocalFormStorage from "./LocalFormStorage";
 // import LocalStorageData from "./LocalStorageData";
 // import TestComponent from "./TestComponent.js";
-import CallBackHook from "./CallBackHook.js";
+// import CallBackHook from "./CallBackHook.js";
 // import FormValidation from "./FormValidation.js"
+
+// import UseMemoHook from "./UseMemoHook";
+import Form from "./Form";
+// import UseCounter from "./UseCounter"
+
 
 function App() {
   // const name = 'Snehal' ;
@@ -38,8 +43,13 @@ function App() {
 
       {/* 8 dec 2022 */}
       {/* <FormValidation /> */}
+      {/* 9 dec 2022 */}
+      {/* <CallBackHook /> */}
+        {/* 12 dec 2022 */}
+      {/* <UseMemoHook /> */}
+      {/* <UseCounter /> */}
+      <Form />
 
-      <CallBackHook />
     </div>
   );
 }
