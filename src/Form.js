@@ -27,10 +27,10 @@ export default function Form() {
   }
 
   return (
-    <>
+    <div className='text-center container' >
       <h2>City quiz</h2>
       <p>
-        In which city is there a billboard that turns air into drinkable water?
+      Who was the first Indian to win the World Amateur Billiards title?
       </p>
       <form onSubmit={handleSubmit}>
         <textarea
@@ -51,15 +51,15 @@ export default function Form() {
           </p>
         }
       </form>
-    </>
+    </div>
   );
-}
+} 
 
 function submitForm(answer) {
   // Pretend it's hitting the network.
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let shouldError = answer.toLowerCase() !== 'lima'
+      let shouldError = answer.toLowerCase() !== 'wilson jones'
       if (shouldError) {
         reject(new Error('Good guess but a wrong answer. Try again!'));
       } else {

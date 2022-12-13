@@ -16,8 +16,10 @@
 // import FormValidation from "./FormValidation.js"
 
 // import UseMemoHook from "./UseMemoHook";
-import Form from "./Form";
+// import Form from "./Form";
 // import UseCounter from "./UseCounter"
+// import ControlledForms from "./ControlledForms";
+// import DynamicForms from "./DynamicForms";
 
 
 function App() {
@@ -48,7 +50,10 @@ function App() {
         {/* 12 dec 2022 */}
       {/* <UseMemoHook /> */}
       {/* <UseCounter /> */}
-      <Form />
+      {/* <Form /> */}
+       {/* 13 dec 2022 */}
+      {/* <ControlledForms /> */}
+      {/* <DynamicForms /> */}
 
     </div>
   );
