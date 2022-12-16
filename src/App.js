@@ -15,6 +15,8 @@
 // import CallBackHook from "./CallBackHook.js";
 // import FormValidation from "./FormValidation.js"
 
+import Fibonacci from "./Fibonacci"
+
 // import UseMemoHook from "./UseMemoHook";
 // import Form from "./Form";
 // import UseCounter from "./UseCounter"
@@ -27,7 +29,7 @@ function App() {
 
   // const [data,setData] = useState("")
   return (
-    <div className="App">
+    <div className="">
       {/* <RemoveDuplicateCharacter /> */}
       {/* <Style /> */}
       {/* <StoredDataOnWindow /> */}
@@ -54,7 +56,9 @@ function App() {
        {/* 13 dec 2022 */}
       {/* <ControlledForms /> */}
       {/* <DynamicForms /> */}
-
+       {/* 14 dec 2022 */}
+      <Fibonacci />
+      
     </div>
   );
 }
