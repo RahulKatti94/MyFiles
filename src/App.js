@@ -15,7 +15,7 @@
 // import CallBackHook from "./CallBackHook.js";
 // import FormValidation from "./FormValidation.js"
 
-import Fibonacci from "./Fibonacci"
+//  import Fibonacci from "./Fibonacci"
 
 // import UseMemoHook from "./UseMemoHook";
 // import Form from "./Form";
@@ -57,7 +57,8 @@ function App() {
       {/* <ControlledForms /> */}
       {/* <DynamicForms /> */}
        {/* 14 dec 2022 */}
-      <Fibonacci />
+      {/* <Fibonacci /> */}
+      
       
     </div>
   );
