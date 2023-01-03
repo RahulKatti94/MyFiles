@@ -15,6 +15,11 @@
 // import CallBackHook from "./CallBackHook.js";
 // import FormValidation from "./FormValidation.js"
 
+import CssPropertiesCheck from "./CssPropertiesCheck";
+import Testing from "./Testing";
+
+// import Testing from "./Testing";
+
 //  import Fibonacci from "./Fibonacci"
 
 // import UseMemoHook from "./UseMemoHook";
@@ -58,7 +63,13 @@ function App() {
       {/* <DynamicForms /> */}
        {/* 14 dec 2022 */}
       {/* <Fibonacci /> */}
-      
+      {/* 2nd jan 2023 */}
+      {/* <Testing /> */}
+
+      {/* 3rd jan 2023 */}
+
+      <CssPropertiesCheck/>
+      <Testing />
       
     </div>
   );
