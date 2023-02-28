@@ -11,13 +11,14 @@ const TodoMethod = () =>{
     }
 
      const storeData = () =>{
+      
         setData((ele) =>{ 
                 return [...ele , value]
                
         })
         setValue(" ");
      }
-    
+    console.log(data)
      const removeItem = (id) =>{
 
         setData((ele)=>{
