@@ -8,7 +8,6 @@
 // import UploadAndDisplayImage from './UploadAndDisplayImage'
 // import LoginId from './LoginId'
 // import Information from "./Information";
-<<<<<<< HEAD
 // import Home from "./Home";
 // import Login from "./Login";
   // import Sign from "./Sign";
@@ -16,7 +15,6 @@
 import { useState } from 'react';
 import LoginForm from './LoginForm';
 import UserData from './UserData';
-=======
 // import LocalStorage from "./LocalStorage";
 // import LocalFormStorage from "./LocalFormStorage";
 // import LocalStorageData from "./LocalStorageData";
@@ -24,7 +22,7 @@ import UserData from './UserData';
 // import CallBackHook from "./CallBackHook.js";
 // import FormValidation from "./FormValidation.js"
 
-import CssPropertiesCheck from "./CssPropertiesCheck";
+// import CssPropertiesCheck from "./CssPropertiesCheck";
 import Testing from "./Testing";
 
 // import Testing from "./Testing";
@@ -37,7 +35,6 @@ import Testing from "./Testing";
 // import UseCounter from "./UseCounter"
 // import ControlledForms from "./ControlledForms";
 // import DynamicForms from "./DynamicForms";
->>>>>>> b766b9ddbc19f3eb00ce3b6217e5d380b0dbab4d
 
 
 function App() {
@@ -77,14 +74,14 @@ function App() {
       {/* <LocalStorageData /> */}
       {/* <LocalFormStorage /> */}
 
-<<<<<<< HEAD
+
     {/* <TodoMethod /> */}
     {/* <Home /> */}
     {/* <Sign /> */}
     {/* <UploadAndDisplayImage /> */}
-      {/* <Login /> */}
+       {/* <Login /> */}
 
-      {loggedIn ? (
+       {loggedIn ? (
         <>
           <UserData />
           <button onClick={handleLogout}>Log out</button>
@@ -94,8 +91,7 @@ function App() {
           {loginError && <p>Login failed. Please try again.</p>}
           <LoginForm onLogin={handleLogin} onError={handleError} />
         </>
-      )}
-=======
+         )}
       {/* 8 dec 2022 */}
       {/* <FormValidation /> */}
       {/* 9 dec 2022 */}
@@ -114,10 +110,10 @@ function App() {
 
       {/* 3rd jan 2023 */}
 
-      <CssPropertiesCheck/>
-      <Testing />
+      {/* <CssPropertiesCheck/> */}
+      {/* <Testing /> */}
       
->>>>>>> b766b9ddbc19f3eb00ce3b6217e5d380b0dbab4d
+
     </div>
   );
 }
