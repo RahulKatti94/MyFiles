@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react';
-import "./todo.css"
+import React, { useState } from "react";
 
+ import "./FormValidation.css";
 
-const LocalStorage = () => {
-
-    const [errorMessages, setErrorMessages] = useState({});
+function FormValidation() {
+  // React States
+  const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-
+  // User Login info
   const database = [
     {
       username: "user1",
@@ -27,40 +25,34 @@ const LocalStorage = () => {
 
   const handleSubmit = (event) => {
     //Prevent page reload
-    alert();
     event.preventDefault();
 
-    // var { uname, pass } = document.forms[0];
+    var { uname, pass } = document.forms[0];
 
-    // // Find user login info
-    // const userData = database.find((user) => user.username === uname.value);
+    // Find user login info
+    const userData = database.find((user) => user.username === uname.value);
 
-    // // Compare user info
-    // if (userData) {
-    //   if (userData.password !== pass.value) {
-    //     // Invalid password
-    //     setErrorMessages({ name: "pass", message: errors.pass });
-    //   } else {
-    //     setIsSubmitted(true);
-    //   }
-    // } else {
-    //   // Username not found
-    //   setErrorMessages({ name: "uname", message: errors.uname });
-    // }
+    // Compare user info
+    if (userData) {
+      if (userData.password !== pass.value) {
+        // Invalid password
+        setErrorMessages({ name: "pass", message: errors.pass });
+      } else {
+        setIsSubmitted(true);
+      }
+    } else {
+      // Username not found
+      setErrorMessages({ name: "uname", message: errors.uname });
+    }
   };
+
+ 
 
   // Generate JSX code for error message
   const renderErrorMessage = (name) =>
     name === errorMessages.name && (
       <div className="error">{errorMessages.message}</div>
     );
-
-
-    useEffect (()=>{
-        console.log(errorMessages);
-        localStorage.setItem('form', JSON.stringify(errorMessages));
-
-    },[errorMessages])
 
   // JSX code for login form
   const renderForm = (
@@ -93,4 +85,4 @@ const LocalStorage = () => {
   );
 }
 
-export default LocalStorage
+export default FormValidation;
